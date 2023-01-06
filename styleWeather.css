@@ -32,7 +32,8 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-image: url(./img/sd_background.jpg);
+    background-image: url(./img/weatherBG.jpg);
+    background-size: cover;
 }
 
 .box {
