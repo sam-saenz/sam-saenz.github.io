@@ -1,0 +1,100 @@
+html {
+    font-family: 'Roboto Slab', serif;
+}
+
+button {
+    margin: .5rem;
+    border-radius: 40%;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    background-color: rgb(203, 203, 203);
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: .4rem;
+    font-family: inherit;
+    font-size: 130%;
+    width: calc(100% - 150px);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./img/sd_background.jpg);
+}
+
+.box {
+    background-color: rgba(71, 185, 200, 0.54);
+    padding: 3rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin: 30px;
+    color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.temperature {
+    margin: 0;
+}
+
+.desc {
+    text-transform: capitalize;
+    padding-bottom: 5px;
+    margin-left: 5px;
+}
+
+.humidity {
+    padding-bottom: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading Weather";
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.weather.error {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.error::after {
+    visibility: visible;
+    content: "Cannot Find City";
+    color: white;
+    position: absolute;
+    top: 0;
+}

@@ -320,6 +320,12 @@ p{
 }
 /* End of Resume Section */
 
+/* Start of Projects Section */
+    #projects .test a{
+        font-size: 20rem;
+    }
+/* End of Projects Section */
+
 /* Keyframes */
 @keyframes text_reveal_box{
     50%{
