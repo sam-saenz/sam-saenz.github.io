@@ -171,9 +171,6 @@ p{
 /* End Hero Section */
 
 /* Services Section */
-#services {
-    
-}
 #services .container{
     flex-direction: column;
 }
@@ -321,9 +318,52 @@ p{
 /* End of Resume Section */
 
 /* Start of Projects Section */
-    #projects .test a{
-        font-size: 4rem;
-    }
+#projects .container{
+    flex-direction: column;
+}
+#projects .projects{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+    background-color: rgb(41, 41, 41);
+}
+#projects .section-title{
+    font-size: 4rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-align: center;
+}
+#projects .projects-bottom{
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#projects .project-item{
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#projects .project-item img{
+    height: auto;
+}
+#resume .project-item-description{
+    margin: 5%;
+}
+#projects .project-item p{
+    color: rgb(193, 193, 193);
+    font-size: 3rem;
+    line-height: 1.4;
+}
+#projects .project-item a{
+    font-size: 2rem;
+}
 /* End of Projects Section */
 
 /* Keyframes */
