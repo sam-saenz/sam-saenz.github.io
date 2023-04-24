@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <title>Sam Saenz</title>
 </head>
+
 <body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#services">About Me</a>
+        <a href="#resume">Education</a>
+        <a href="#projects">Projects</a>
+    </div>
     <!-- Hero Section  -->
     <section id="hero">
         <div class="hero container">
             <div class="intro">
                 <h1>Sam Saenz<span></span></h1>
-                <p>I am a recently graduated Web Developer from San Diego interested in working with others to solve problems with effective and creative solutions.</p>
-                
+                <p>I am a recently graduated Web Developer from San Diego interested in working with others to solve
+                    problems with effective and creative solutions.</p>
+
             </div>
             <a href="#services" type="button" class="cta">
                 <i class="down-button"></i>
@@ -30,25 +44,26 @@
                 <a href=""></a>
                 <h1 class="section-title">About Me</h1>
                 <img class="portrait" src="./img/me2.jpg" alt="">
-                <p>I am a freelance web developer with a Bachelor's Degree in Computer Science. You can find me at the following links:
+                <p>I am a freelance web developer with a Bachelor's Degree in Computer Science. You can find me at the
+                    following links:
                 </p>
             </div>
             <div class="service-bottom">
-                <div class="service-item">
+                <div onclick="" class="service-item">
                     <div class="icon">
                         <a href="https://www.linkedin.com/in/samuelsaenz/">
                             <img class="link-button" src="./img/linkedinLogo.png" alt="">
-                        </a>     
+                        </a>
                     </div>
                     <a href="https://www.linkedin.com/in/samuelsaenz/">LinkedIn</a>
-                    <p> 
+                    <p>
                     </p>
                 </div>
                 <div class="service-item">
                     <div class="icon">
                         <a href="https://github.com/sam-saenz">
                             <img class="link-button" src="./img/githubLogo.png" alt="">
-                        </a>       
+                        </a>
                     </div>
                     <a href="https://github.com/sam-saenz">GitHub</a>
                     <p>
@@ -61,7 +76,7 @@
                         </a>
                     </div>
                     <a href="./docs/Samuel_Saenz_Resume.pdf">Resume</a>
-                    <p> 
+                    <p>
                     </p>
                 </div>
             </div>
@@ -76,16 +91,33 @@
                 <h1 class="section-title">My Education</h1>
             </div>
             <div class="resume-bottom">
-                <img src="./img/sdsu.jpg" alt="">
-                <div class="resume-bottom-bottom">
-                    <div class="resume-title">
-                        <h3 class="eduTitle">San Diego State University:</h3>
+                <div class="resume-item">
+                    <img class="resume-pic" src="./img/sdsu.jpg" alt="">
+                    <div class="resume-text">
+                        <div class="resume-title">
+                            <h3 class="eduTitle">San Diego State University:</h3>
+                        </div>
+                        <div class="resume-body">
+                            <p>I am a San Diego State University graduate with a Bachelor's Degree in Computer Science.
+                                Over the course of my studies I learned to effectively work with others in a team
+                                environment and solve problems logically and effectively.
+                            </p>
+                        </div>
                     </div>
-                    <div class="resume-body">
-                        <p>I am a San Diego State University graduate with a Bachelor's Degree in Computer Science. Over the course of my studies I learned 
-                            to effectively work with others in a team environment and solve problems logically and effectively.
-                        </p>
+                </div>
+                <div class="resume-item">
+                    <div class="resume-text">
+                        <div class="resume-title">
+                            <h3 class="eduTitle">LEARN Academy:</h3>
+                        </div>
+                        <div class="resume-body">
+                            <p>I am attending LEARN Academy as a Full-Stack Web Development student. Through
+                                pair-programming exercises I have honed my abilities in each step of the full-stack
+                                process, including Javascript, React, Ruby on Rails, and Postgresql.
+                            </p>
+                        </div>
                     </div>
+                    <img class="resume-pic" src="./img/LEARN.png" alt="">
                 </div>
             </div>
         </div>
@@ -100,13 +132,31 @@
             </div>
             <div class="projects-bottom">
                 <div class="project-item">
-                    <div class="project-item-description">
-                        <p>This project is a simple web-app that uses OpenWeatherMap's online API to request real-time weather information about a
-                            chosen location. This implements HTML and CSS for the webpage, and Javascript for the functionality of the application.
-                        </p>
-                        <a href="indexWeather.html" class="test">Click Here For Weather App</a>
+                    <div class="project-text">
+                        <div class="project-title">
+                            <h3>Weather App:</h3>
+                        </div>
+                        <div class="project-item-description">
+                            <p>This project is a simple web-app that uses OpenWeatherMap's online API to request real-time weather information about a chosen location. This implements HTML and CSS for the webpage, and Javascript for the functionality of the application.
+                            </p>
+                            <a href="indexWeather.html" class="test">Click Here For Weather App</a>
+                        </div>
                     </div>
-                    <img src="./img/weatherBG.jpg" alt=""> 
+                    <img class="project-pic" src="./img/weatherBG.jpg" alt="">
+                </div>
+                <div class="project-item">
+                    <img class="project-pic" src="./img/weatherBG.jpg" alt="">
+                    <div class="project-text">
+                        <div class="project-title">
+                            <h3>Text-Based Adventure Game:</h3>
+                        </div>
+                        <div class="project-item-description">
+                            <p>This project is a text-based game made in Ruby that runs entirely in the console. It uses recursively called functions to simulate travelling between rooms of a house, trying to discover what has happened. Making this project was a fun way to experiment with Ruby and discover how we can turn methods and conditionals with user input into an interactive "game board".
+                            </p>
+                            <!-- <a href="indexWeather.html" class="test">Click Here For Weather App</a> -->
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -114,7 +164,5 @@
     <!-- End Project Section -->
 
 </body>
+
 </html>
-
-
-

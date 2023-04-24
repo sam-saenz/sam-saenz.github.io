@@ -1,12 +1,12 @@
 let weather = {
     "apiKey": "31f653ca78d8f591aab943d3cf2d731f",
-    fetchWeather: function(city) {
+    fetchWeather: function (city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=imperial&appid=" + this.apiKey)
             .then((response) => {
-                if(response.ok) {
+                if (response.ok) {
                     return response.json()
                 }
-                else if(response.status === 404) {
+                else if (response.status === 404) {
                     document.querySelector(".weather").classList.add("error")
                     return Promise.reject('error 404')
                 }
@@ -16,9 +16,9 @@ let weather = {
             })
             .then((data) => this.weatherDisplay(data));
     },
-    weatherDisplay: function(data) {
+    weatherDisplay: function (data) {
         const { name } = data;
-        const { icon, description} = data.weather[0];
+        const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
         document.querySelector(".location").innerText = "Weather in " + name;
@@ -31,17 +31,17 @@ let weather = {
         document.querySelector(".weather").classList.remove("loading")
         document.querySelector(".weather").classList.remove("error")
     },
-    searchLocation: function() {
+    searchLocation: function () {
         this.fetchWeather(document.querySelector(".search-bar").value);
     }
 };
 
-document.querySelector(".search button").addEventListener("click", function() {
+document.querySelector(".search button").addEventListener("click", function () {
     weather.searchLocation();
 });
 
-document.querySelector(".search-bar").addEventListener("keyup", function(event) {
-    if(event.key == "Enter") {
+document.querySelector(".search-bar").addEventListener("keyup", function (event) {
+    if (event.key == "Enter") {
         weather.searchLocation();
     }
 });
